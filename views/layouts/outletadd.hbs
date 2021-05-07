@@ -1,0 +1,233 @@
+{{> header}}
+{{> adminsidebar}}
+
+<div class="page-wrapper">
+        {{> breadcrums page='Add'}}
+        <div class="page-content container-fluid">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card card-body">
+                            <h4 class="card-title">Add {{module}}</h4>
+                            <h5 class="card-subtitle"> </h5>
+                            {{#if outlet}}
+                            <form class="form-horizontal mt-4">
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label> Location<span class="help"> </span></label><br>
+                                    <select class="form-control select2" style='width:100%'>
+                                        <option>Select Country</option>
+                                        <option>India</option>
+                                        <option>Australia</option>
+                                        <option>New Zeland</option>
+                                        <option>UK</option>
+                                        <option>USA</option>
+                                    </select>
+                                      
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label> Name<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="form-group">
+                                    <label> Phone<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label> Email<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                </div>
+                                <div class='row'>
+                               <div class="form-group col-lg-12">
+                                    <label> Description<span class="help"></span></label>
+                                    <textarea type="text" class="form-control" rows=10 cols=60>
+                                    </textarea>
+                                </div>
+                                </div>
+                                <div class='row'>
+                                <div class="form-group col-lg-12" >
+                                    <label> Address<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                </div>
+                                    
+                                
+                                <input type="submit" class="btn btn-success float-right" value="Add Outlet">                                
+                            </form>
+                            {{/if}}
+                            {{#if customer}}
+                            <form class="form-horizontal mt-4">
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label> Fullname<span class="help"> </span></label><br>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                      
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label> Mobile<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="form-group">
+                                    <label> Company Name<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label> Person Incharge Name<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                </div>
+                                <div class='row'>
+                               <div class="form-group col-lg-12">
+                                    <label> Photo<span class="help"></span></label>
+                                    <input type="file" class="form-control" >
+                                </div>
+                                </div>
+                                <div class='row'>
+                                <div class="form-group col-lg-12" >
+                                    <label> Address<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                </div>
+                                    
+                                
+                                <input type="submit" class="btn btn-success float-right" value="Add Customer">                                
+                            </form>
+                            {{/if}}
+                            {{#if driver}}
+                            <form class="form-horizontal mt-4">
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label> Fullname<span class="help"> </span></label><br>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                      
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label> Mobile<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="form-group">
+                                    <label> National ID<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="1234...">
+                                </div>
+                                
+                                    
+                                
+                                <input type="submit" class="btn btn-success float-right" value="Add Driver">                                
+                            </form>
+                            {{/if}}
+                            {{#if itemcategory}}
+                            <form class="form-horizontal mt-4">
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label> Category Name<span class="help"> </span></label><br>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                      
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label> Category Description<span class="help"></span></label>
+                                    <textarea type="text" class="form-control" placeholder="George deo..." rows='8' cols='15'></textarea>
+                                </div>
+                                
+                                    
+                                
+                                <input type="submit" class="btn btn-success float-right" value="Add Category">                                
+                            </form>
+                            {{/if}}
+                            {{#if weighttypes}}
+                            <form class="form-horizontal mt-4">
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label> Short Name<span class="help"> </span></label><br>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                      
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label> Full Name<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                
+                                    
+                                
+                                <input type="submit" class="btn btn-success float-right" value="Add Weight Types">                                
+                            </form>
+                            {{/if}}
+                            {{#if location}}
+                            <form class="form-horizontal mt-4">
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label>Location Name<span class="help"> </span></label><br>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                      
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Description<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                
+                                    
+                                
+                                <input type="submit" class="btn btn-success float-right" value="Add Location">                                
+                            </form>
+                            {{/if}}
+                            {{#if item}}
+                            <form class="form-horizontal mt-4">
+                                <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label> Item Name<span class="help"> </span></label><br>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                      
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label> Item Description<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="form-group">
+                                    <label> Item Category<span class="help"></span></label>
+                                     <select class="form-control select2" style='width:100%'>
+                                        <option>Select Item Category</option>
+                                        <option>Category1</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label> Item Price<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="form-group">
+                                    <label> Item Weight<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="form-group">
+                                    <label> Weight Types<span class="help"></span></label>
+                                    <select class="form-control select2" style='width:100%'>
+                                        <option>Select Item Weight Types</option>
+                                        <option>Weight Type-1</option>
+                                        
+                                    </select>
+                                </div>
+                                    
+                                
+                                <input type="submit" class="btn btn-success float-right" value="Add Item">                                
+                            </form>
+                            {{/if}}
+                
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+
+{{> footer}}

@@ -1,0 +1,142 @@
+{{> header}}
+{{> adminsidebar}}
+    
+        <div class="page-wrapper">
+        {{> breadcrums page='add'}}
+        <div class="page-content container-fluid">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card card-body">
+                            <h4 class="card-title">Add {{module}}</h4>
+                            <h5 class="card-subtitle"> </h5>
+                            
+                            <form class="form-horizontal mt-4">
+                                <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label> Firstname<span class="help"> </span></label>
+                                    <input type="text" class="form-control" placeholder="e.g. Darshak Shah" >
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label> Lastname<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label> Mobile<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="form-group">
+                                    <label> Username<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label> Password<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                               <div class="form-group col-lg-6">
+                                    <label> Confirm Password<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <label> Address<span class="help"></span></label>
+                                    <input type="text" class="form-control" placeholder="George deo...">
+                                </div>
+                                <div class="form-group">
+                                    <label> Status<span class="help"></span></label>
+                                    <select class="form-control">
+                                        <option selected=selected>Enabled</option>
+                                        <option>Disabled</option>
+                                    </select>
+                                </div>
+                                
+                                <p>Permission:</p>
+                                <div class="form-group row pt-3">
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Manage Merchant Admin</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Manage Outlets</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Manage Staff</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Manage Items</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Manage Customers</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Manage Drivers</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Manage Location</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Manage Item Category</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Manage Weight Types</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row pt-3">
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Reports</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">In Stock</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Moving</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Manufacture</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Delivered</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Losses</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                                
+                                <input type="submit" class="btn btn-success float-right" value="Add Staff">                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+{{> footer}}
