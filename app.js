@@ -26,6 +26,6 @@ app.set('view engine', 'hbs');
 
 app.use('/', require('./routes/pages'))
 app.use('/auth', require('./routes/auth'))
-app.listen(80, () => {
+app.listen(8080, () => {
     console.log("server is running on port 3400");
 })
